@@ -1,7 +1,7 @@
 from app.main import get_coin_combination
 
 
-def test_get_coin_combination():
+def test_get_coin_combination() -> None:
     assert get_coin_combination(0) == [0, 0, 0, 0], "Failed for 0 cents"
 
     assert get_coin_combination(1) == [1, 0, 0, 0], "Failed for 1 cent"
